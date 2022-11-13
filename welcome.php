@@ -27,7 +27,15 @@
     function deleteProduct(cod) {
       bootbox.confirm("Desea eliminar el producto" + cod, function(result) {
         if (result) {
-          window.location = "delete.php?q=" + cod;
+          window.location = "delete_products.php?q=" + cod;
+        }
+      });
+    }
+
+    function deleteCategory(cod) {
+      bootbox.confirm("Desea eliminar la categoria" + cod, function(result) {
+        if (result) {
+          window.location = "delete_categories.php?q=" + cod;
         }
       });
     }
@@ -115,7 +123,7 @@
   <br>
   <br>
 
-  <a href="insert_category.php" class="btn btn-primary">Ingresar Categoria</a>
+  <a href="insert_categories.php" class="btn btn-primary">Ingresar Categoria</a>
   <br>
   <br>
   <?php

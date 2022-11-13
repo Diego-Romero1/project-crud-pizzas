@@ -25,10 +25,6 @@
                         <input type="text" required=" " placeholder="Ingrese la nueva categoria" class="form-control" id="categoria" name="categoria">
                     </div>
                    
-                    <div class="form-group">
-                        <br>
-                        <label class="control-label" for="categoria">CATEGORIA DEL PRODUCTO</label>
-                        <select id="categoria" name="categoria" class="form-control">
                             <?php
                             include_once("config_products.php");
                             include_once("db.php");
